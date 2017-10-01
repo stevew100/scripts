@@ -68,7 +68,6 @@ for line in lines:
     if len(line) == 0:
         continue;
 
-
     # Process package/bundle
     bits = line.split(' ',3)
 
@@ -78,5 +77,3 @@ for line in lines:
 
     if version != 'target':
         print host + "|" + type  + "|" + package + "|" + version + "|" + description
-
-#hello("--" + bits)
