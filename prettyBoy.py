@@ -3,6 +3,12 @@
 import sys
 import re
 
+# This wee script processes the output from HP-UX swlist into a form suitable for a pivot table.
+
+# Usage: ssh root@<host> swlist | ./prettyBoy.py
+
+
+################################# Sample Output ..... #################################
 # # Initializing...
 # # Contacting target "nzlhp05"...
 # #
@@ -29,6 +35,7 @@ import re
 #   apr_util                              0.9.17         apr_util
 #   bash                                  3.2            bash
 #   ...
+#################################                    #################################
 
 type='';
 data = sys.stdin.read()
